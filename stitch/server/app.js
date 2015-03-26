@@ -18,14 +18,14 @@ var package = stitch.createPackage({
   ]
 });
 
-// Whenever a request goes to the client, we deliver the modules as client.js
+// Whenever a request goes to the client, we deliver the modules as bundle.js
 app.get('/static/bundle.js', package.createServer());
 
 // We add a basic route that serves an index.html
 // ... let's use the same as above
 app.get('/', function(req, res) {
   console.log("--> /");
-  var html = path.resolve(__dirname + '/../index.html');
+  var html = path.resolve(__dirname + '/../static/index.html');
   res.sendfile(html);
 });
 
