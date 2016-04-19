@@ -3,7 +3,7 @@
 Bundling JavaScript is needed to transport Node.js modules from server to browser. 
 This chapter shows some examples on how to bundle JavaScript for usage in a web browser.
 
-The importance of learning to bundle JavaScript can be soon from looking at modules at the npm repository. In modules from npmjs, you will often see a statement similar to:
+The importance of learning to bundle JavaScript can be seen from looking at modules at the npm repository. In modules from npmjs, you will often see a statement similar to:
 
     module.exports = someFunction;
 
